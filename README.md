@@ -1,10 +1,10 @@
 # 🚀 Command Manager
 
 ## 🌟 Overview
-Command Manager is a sleek, user-friendly web application built using modern technologies to help you create, manage, and execute shell commands seamlessly. With a minimal yet powerful UI, you can add, edit, delete, and run commands with ease.
+Command Manager is a sleek, user-friendly web application built using modern technologies to help you create, manage, and execute shell commands seamlessly. With a minimal yet powerful UI, you can add, delete, and run commands with ease.
 
 ## ✨ Features
-- 📌 **Add, Edit & Delete Commands**: Manage your shell commands effortlessly.
+- 📌 **Add,Run & Delete Commands**: Manage your shell commands effortlessly.
 - ⚡ **Execute Commands**: Run commands instantly from the UI.
 - 🔍 **Search & Filter**: Quickly find the commands you need.
 - 📜 **View Command Output**: See real-time execution results.
@@ -13,7 +13,7 @@ Command Manager is a sleek, user-friendly web application built using modern tec
 ## 🛠 Technologies Used
 - **Frontend**: React 19, TypeScript, Ant Design, Axios
 - **Backend**: Node.js with Express
-- **Database**: JSON-based storage (or any configured DB)
+- **Database**: JSON-based storage
 
 ## 📦 Installation & Setup
 
@@ -58,39 +58,5 @@ node server.js
 ```
 Runs the Express server on `http://localhost:5000/`
 
-## 📡 API Endpoints
-### 📌 Fetch Commands
-```sh
-GET /commands
-```
-### ➕ Add Command
-```sh
-POST /commands
-Body: { "name": "Ping Google", "command": "ping google.com", "description": "connects to google" }
-```
-### 🛠 Edit Command
-```sh
-PUT /commands/:id
-Body: { "name": "New Name", "command": "new command", "description": "updated description" }
-```
-### ❌ Delete Command
-```sh
-DELETE /commands/:id
-```
-### ⚡ Execute Command
-```sh
-POST /execute/:id
-```
 
-## 🔧 Troubleshooting
-- **404 Error**: Ensure the backend is running and API endpoints match frontend requests.
-- **Command Not Found**: Some commands may not be available on all OS platforms (e.g., `ifconfig` on Windows).
-
-## 🚀 Future Enhancements
-- 🔐 User authentication
-- 📊 Command execution history
-- ☁ Cloud database support
-
-## 📜 License
-This project is open-source under the MIT License.
 
