@@ -24,7 +24,7 @@ Ensure you have the following installed:
 
 ### 🚀 Clone the Repository
 ```sh
-git clone https://github.com/your-repo/command-manager.git
+git clone https://github.com/imswer/task3.git
 cd command-manager
 ```
 
