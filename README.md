@@ -58,5 +58,18 @@ node server.js
 ```
 Runs the Express server on `http://localhost:5000/`
 
+## 📸 Screenshots
+
+All screenshots are stored in the images directory.
+
+- [app](images/app.png)
+- [add](images/add.png)
+- [output](images/output.png)
+- [search](images/search.png)
+- [frontend_running](images/frontend_running.png)
+- [server_running](images/server_running.png)
+
+---
+
 
 
