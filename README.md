@@ -4,16 +4,16 @@
 Command Manager is a sleek, user-friendly web application built using modern technologies to help you create, manage, and execute shell commands seamlessly. With a minimal yet powerful UI, you can add, edit, delete, and run commands with ease.
 
 ## ✨ Features
-- 📌 *Add, Edit & Delete Commands*: Manage your shell commands effortlessly.
-- ⚡ *Execute Commands*: Run commands instantly from the UI.
-- 🔍 *Search & Filter*: Quickly find the commands you need.
-- 📜 *View Command Output*: See real-time execution results.
-- 🎨 *Modern UI*: Built with Ant Design for an elegant user experience.
+- 📌 **Add, Edit & Delete Commands**: Manage your shell commands effortlessly.
+- ⚡ **Execute Commands**: Run commands instantly from the UI.
+- 🔍 **Search & Filter**: Quickly find the commands you need.
+- 📜 **View Command Output**: See real-time execution results.
+- 🎨 **Modern UI**: Built with Ant Design for an elegant user experience.
 
 ## 🛠 Technologies Used
-- *Frontend*: React 19, TypeScript, Ant Design, Axios
-- *Backend*: Node.js with Express
-- *Database*: JSON-based storage (or any configured DB)
+- **Frontend**: React 19, TypeScript, Ant Design, Axios
+- **Backend**: Node.js with Express
+- **Database**: JSON-based storage (or any configured DB)
 
 ## 📦 Installation & Setup
 
@@ -23,68 +23,68 @@ Ensure you have the following installed:
 - npm or yarn
 
 ### 🚀 Clone the Repository
-sh
+```sh
 git clone https://github.com/your-repo/command-manager.git
 cd command-manager
-
+```
 
 ### 📥 Install Dependencies
-sh
+```sh
 npm install
 # or
 yarn install
-
+```
 #### Required Modules
-sh
+```sh
 npm install express cors axios body-parser nodemon
-
+```
 For frontend:
-sh
+```sh
 npm install react-router-dom @ant-design/icons antd axios
-
+```
 
 ### 🔥 Start the Frontend
-sh
+```sh
 npm start
 # or
 yarn start
-
-Runs the React app on http://localhost:3000/
+```
+Runs the React app on `http://localhost:3000/`
 
 ### 🚀 Start the Backend
 Navigate to the backend directory and run:
-sh
+```sh
 node server.js
-
-Runs the Express server on http://localhost:5000/
+```
+Runs the Express server on `http://localhost:5000/`
 
 ## 📡 API Endpoints
 ### 📌 Fetch Commands
-sh
+```sh
 GET /commands
-
+```
 ### ➕ Add Command
-sh
+```sh
 POST /commands
 Body: { "name": "Ping Google", "command": "ping google.com", "description": "connects to google" }
-
+```
 ### 🛠 Edit Command
-sh
+```sh
 PUT /commands/:id
 Body: { "name": "New Name", "command": "new command", "description": "updated description" }
-
+```
 ### ❌ Delete Command
-sh
+```sh
 DELETE /commands/:id
-
+```
 ### ⚡ Execute Command
-sh
+```sh
 POST /execute/:id
-
+```
 
 ## 🔧 Troubleshooting
-- *404 Error*: Ensure the backend is running and API endpoints match frontend requests.
-- *Command Not Found*: Some commands may not be available on all OS platforms (e.g., ifconfig on Windows).
+- **404 Error**: Ensure the backend is running and API endpoints match frontend requests.
+- **Command Not Found**: Some commands may not be available on all OS platforms (e.g., `ifconfig` on Windows).
 
 ## 🚀 Future Enhancements
 - 🔐 User authentication
@@ -93,3 +93,4 @@ POST /execute/:id
 
 ## 📜 License
 This project is open-source under the MIT License.
+
